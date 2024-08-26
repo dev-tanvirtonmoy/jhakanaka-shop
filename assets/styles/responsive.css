@@ -1,5 +1,7 @@
 /* Mobile Screen */
 @media screen and (max-width: 570px) {
+
+    /* Navbar section responsive */
     nav {
         /* flex-direction: column; */
         justify-content: space-between;
@@ -19,5 +21,19 @@
     }
     nav .menu-icon{
         display: block;
+    }
+
+    /* Banner section responsive */
+    .banner {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .banner .banner-content {
+        width: 100%;
+        order: 2;
+    }
+    .banner .banner-img{
+        width: 100%;
+        order: 1;
     }
 }
