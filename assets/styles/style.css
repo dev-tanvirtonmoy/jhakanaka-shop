@@ -163,5 +163,23 @@ nav {
 /* Banner section styles end here */
 
 /* Product section styles start from here */
-
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 15px;
+}
+.card {
+    padding: 15px;
+    background: var(--background-color);
+}
+.card img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.product-name {
+    display: flex;
+    justify-content: space-between;
+}
 /* Product section styles end here */
