@@ -12,7 +12,7 @@ body,html{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-ul.ol.li{
+ul,ol,li{
     list-style: none;
 }
 a,a:hover {
@@ -24,12 +24,68 @@ img{
     object-fit: cover;
     display: flex;
 }
+/* Some shared styles */
 .container{
-
+    max-width: 1250px;
+    margin: 0 auto;
 }
+
 /* Variable */
 :root {
     --primary-color: #e893cf;
     --secondary-color: #9376e0;
     --background-color: #e6e9eb;
 }
+
+/* Navbar section styles start from here */
+header {
+    background: var(--secondary-color);
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.nav-logo img {
+    width: 90px;
+}
+.nav-logo p {
+    font-size: 1.5rem;
+}
+.nav-logo span{
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.nav-items-container{
+    width: 50%;
+}
+.nav-items-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-items-container a {
+    font-size: 1.25rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+.nav-items-container .btn a{
+    display: block;
+    background: #e893cf;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #000;
+}
+.menu-icon{
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 1rem;
+    border: 1px solid var(--background-color);
+    display: none;
+}
+/* Navbar section styles end here */
